@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
-import Header from "./components/header/Header";
-import Carousel from "./components/carousel/Carousel";
-import Main from './components/main/Main'
-import Footer from './components/footer/Footer'
+import Navbar from "./components/navbar/navbar";
+import Header from "./components/header/header";
+import Carousel from "./components/carousel/carousel";
+import Main from './components/main/main'
+import Footer from './components/footer/footer'
 
 const App = () => {
   return (
