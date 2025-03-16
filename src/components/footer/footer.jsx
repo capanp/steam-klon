@@ -11,7 +11,7 @@ function Footer() {
         </p>
         <div className="line"></div>
         <p className="links">
-          <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fan-p%C4%B1nar-927a5132b/" target="_blank">
+          <a href="https://www.linkedin.com/in/cagan-pinar/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

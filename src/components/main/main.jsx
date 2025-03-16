@@ -23,7 +23,7 @@ import steamDeckVideo from "../../assets/video/deck_banner_animated_webm_turkish
 function Main() {
   const handleClick = () => {
     window.location.href =
-      "https://www.linkedin.com/in/%C3%A7a%C4%9Fan-p%C4%B1nar-927a5132b";
+      "https://www.linkedin.com/in/cagan-pinar/";
   };
 
   return (

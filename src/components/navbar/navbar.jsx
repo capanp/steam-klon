@@ -69,7 +69,7 @@ const Navbar = () => {
           </button>
           <p>
             <a
-              href="https://www.linkedin.com/in/%C3%A7a%C4%9Fan-p%C4%B1nar-927a5132b/"
+              href="https://www.linkedin.com/in/cagan-pinar/"
               target="_blank"
             >
               Linkedin
