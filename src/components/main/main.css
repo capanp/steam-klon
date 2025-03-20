@@ -231,6 +231,7 @@ html, body {
 .game {
     box-shadow: 0 0 5px #000;
     width: 229px;
+    height: 132px;
     background: radial-gradient(62.67% 62.67% at 62.67% 100%, rgba(255, 255, 255, 0.15) 0%, rgba(116, 133, 140, 0.15) 100%);
 }
 
@@ -252,7 +253,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.game:not(:last-child) {
+.game-container a:not(:last-child) {
     margin-right: 8px;
 }
 

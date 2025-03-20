@@ -4,7 +4,6 @@ import Action from "../../assets/action.webp";
 import Rpg from "../../assets/rpg.webp";
 import Strategy from "../../assets/strategy.webp";
 import Horror from "../../assets/horror.webp";
-import Dump from "../../assets/dump.jpg";
 
 import ds from "../../assets/games/dark-souls.jpg";
 import got from "../../assets/games/ghost-of-tsushima.jpg";
@@ -13,12 +12,11 @@ import doom from "../../assets/games/doom-eternal.jpg";
 import hades from "../../assets/games/hades.jpg";
 import cult from "../../assets/games/cult.jpg";
 import resident from "../../assets/games/resident.jpg";
-import ff14 from "../../assets/games/ff14.jpg";
+import ff7 from "../../assets/games/ff7.jpg";
 import gow from "../../assets/games/gow.jpg";
 import ets from "../../assets/games/ets2.jpg";
 
 import deck from "../../assets/decklogo.png";
-import steamDeckVideo from "../../assets/video/deck_banner_animated_webm_turkish.webm";
 
 function Main() {
   const handleClick = () => {
@@ -33,6 +31,7 @@ function Main() {
         <div>Daha Fazlasına Göz Atın</div>
       </div>
       <div className="top-container">
+        <a href="/app/Dark_Souls_Remastered">
         <div className="header-box">
           <img src={ds} width="306" height="260" alt="First" />
           <div className="header-info">
@@ -47,6 +46,8 @@ function Main() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="/app/Ghost_Of_Tsushima">
         <div className="header-box">
           <img src={got} width="306" height="260" alt="Second" />
           <div className="header-info">
@@ -61,7 +62,9 @@ function Main() {
             </div>
           </div>
         </div>
+        </a>
         <div className="header-aside">
+          <a href="/app/Sekiro">
           <div className="normal-box">
             <img src={sekiro} width="306" height="143" alt="Third" />
             <div className="normal-info">
@@ -75,6 +78,8 @@ function Main() {
               </div>
             </div>
           </div>
+          </a>
+          <a href="/app/Doom_Eternal">
           <div className="normal-box normal-last">
             <img src={doom} width="306" height="143" alt="Fourth" />
             <div className="normal-info">
@@ -88,6 +93,7 @@ function Main() {
               </div>
             </div>
           </div>
+          </a>
         </div>
       </div>
       <div className="category-container">
@@ -126,35 +132,43 @@ function Main() {
           <h2>Steam Deck'te En Çok Oynanan</h2>
         </div>
         <div className="game-container">
+          <a href="/app/Hades">
           <div className="game">
             <img src={hades} width="229" height="105" alt="" />
             <div>
               <span>$9.99</span>
             </div>
           </div>
+          </a>
+          <a href="/app/Cult_Of_The_Lamb">
           <div className="game">
             <img src={cult} width="229" height="105" alt="" />
             <div>
               <span>$29.99</span>
             </div>
           </div>
+          </a>
+          <a href="/app/Resident_Evil_4">
           <div className="game">
             <img src={resident} width="229" height="105" alt="" />
             <div>
               <span>$39.99</span>
             </div>
           </div>
+          </a>
+          <a href="/app/Final_Fantasy_VII_Rebirth">
           <div className="game">
-            <img src={ff14} width="229" height="105" alt="" />
+            <img src={ff7} width="229" height="105" alt="" />
             <div>
               <span>$39.99</span>
             </div>
           </div>
+          </a>
         </div>
       </div>
 
       <div className="video-container">
-        <video loop muted autoPlay src={steamDeckVideo}></video>
+        <video loop muted autoPlay src="/video/deck_banner_animated_webm_turkish.webm"></video>
       </div>
 
       <div className="redirect-container">
@@ -192,30 +206,38 @@ function Main() {
       <div className="line-container-bot">
         <h2>Sizin İçin Önerilenler</h2>
         <div className="game-container">
+          <a href="/app/God_Of_War">
           <div className="game">
             <img src={gow} width="229" height="105" alt="" />
             <div>
               <span>$19.99</span>
             </div>
           </div>
+          </a>
+          <a href="/app/Euro_Truck_Simulator_2">
           <div className="game">
             <img src={ets} width="229" height="105" alt="" />
             <div>
               <span>$49.99</span>
             </div>
           </div>
+          </a>
+          <a href="/app/Hades">
           <div className="game">
             <img src={hades} width="229" height="105" alt="" />
             <div>
               <span>$9.99</span>
             </div>
           </div>
+          </a>
+          <a href="/app/Final_Fantasy_VII_Rebirth">
           <div className="game">
-            <img src={ff14} width="229" height="105" alt="" />
+            <img src={ff7} width="229" height="105" alt="" />
             <div>
               <span>$39.99</span>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </main>

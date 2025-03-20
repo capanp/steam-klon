@@ -96,7 +96,7 @@ function Carousel() {
         <h2>Öne Çıkanlar ve Tavsiye Edilenler</h2>
         <div className="carousel-content">
           <div className="carousel-items">
-            <a style={carouselStyle} href="#">
+            <a style={carouselStyle} href="/app/Counter_Strike_2/">
               <div className="carousel-image">
                 <img src={mainFirstImage} width="616" height="353" alt="" />
               </div>
@@ -153,7 +153,7 @@ function Carousel() {
                 </div>
               </div>
             </a>
-            <a className="hided" style={carouselStyle} href="#">
+            <a className="hided" style={carouselStyle} href="/app/Rust/">
               <div className="carousel-image">
                 <img src={mainSecondImage} width="616" height="353" alt="" />
               </div>
@@ -210,7 +210,7 @@ function Carousel() {
                 </div>
               </div>
             </a>
-            <a className="hided" style={carouselStyle} href="#">
+            <a className="hided" style={carouselStyle} href="/app/Baldurs_Gate_3/">
               <div className="carousel-image">
                 <img src={mainThirdImage} width="616" height="353" alt="" />
               </div>
@@ -267,7 +267,7 @@ function Carousel() {
                 </div>
               </div>
             </a>
-            <a className="hided" style={carouselStyle} href="#">
+            <a className="hided" style={carouselStyle} href="/app/Hello_Kitty_Island_Adventure/">
               <div className="carousel-image">
                 <img src={mainFourthImage} width="616" height="353" alt="" />
               </div>
@@ -324,7 +324,7 @@ function Carousel() {
                 </div>
               </div>
             </a>
-            <a className="hided" style={carouselStyle} href="#">
+            <a className="hided" style={carouselStyle} href="/app/Kingdom_Come_Deliverance_II/">
               <div className="carousel-image">
                 <img src={mainFifthImage} width="616" height="353" alt="" />
               </div>
@@ -381,7 +381,7 @@ function Carousel() {
                 </div>
               </div>
             </a>
-            <a className="hided" style={carouselStyle} href="#">
+            <a className="hided" style={carouselStyle} href="/app/Tom_Clancys_Rainbow_Six_Siege">
               <div className="carousel-image">
                 <img src={mainSixthImage} width="616" height="353" alt="" />
               </div>

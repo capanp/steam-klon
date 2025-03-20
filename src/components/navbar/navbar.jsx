@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="content">
         <div className="nav">
           <div className="logo">
-            <a href="">
+            <a href="/">
               <img
                 src={logo}
                 width="176"
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
           <ul className="navigation">
             <li className="menu-item">
-              <a className="selected-menu" href="">
+              <a className="selected-menu" href="/">
                 Mağaza
               </a>
               <div className="popup-menu">
@@ -35,7 +35,7 @@ const Navbar = () => {
               </div>
             </li>
             <li className="menu-item">
-              <a href="">Topluluk</a>
+              <a href="/">Topluluk</a>
               <div className="popup-menu">
                 <div className="popup-item">Ana Sayfa</div>
                 <div className="popup-item">Tartışmalar</div>
@@ -48,7 +48,7 @@ const Navbar = () => {
               <a href="#footer">Hakkında</a>
             </li>
             <li className="menu-item">
-              <a href="">Destek</a>
+              <a href="/help">Destek</a>
             </li>
           </ul>
         </div>
