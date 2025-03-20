@@ -29,7 +29,7 @@ function BodyBackgroundManager() {
         document.body.style.background = "#1b2838";
       } else {
         // Farklı bir sayfaya geçince eski stili kaldır
-        document.body.style.background = "url(./src/assets/colored_body_top.png) center top no-repeat #1b2838";
+        document.body.style.background = "url(/assets/colored_body_top.png) center top no-repeat #1b2838";
       }
   }, [location]);
 
