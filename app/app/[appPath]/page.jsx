@@ -11,21 +11,6 @@ import AppContent from "../../components/app-content/app-content";
 import Footer from "../../components/footer/footer";
 
 
-export async function generateMetadata({ params }) {
-    console.log(params)
-
-    return {
-      title: "appName",
-      description: "ata.description",
-      openGraph: {
-        site: "Steam - Klon",
-        title:' appName',
-        description: 'data.description',
-      },
-    };
-}
-
-
 const StoreApp = () => {
   return (
     <>
