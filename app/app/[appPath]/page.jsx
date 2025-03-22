@@ -1,4 +1,5 @@
-export const runtime = 'nodejs';
+export const runtime = 'edge';
+export const dynamicParams = false
 
 import React from "react";
 import "./storeapp.css";
@@ -9,6 +10,22 @@ import Header from "../../components/header/only-header";
 import AppMedia from "../../components/app-media/app-media";
 import AppContent from "../../components/app-content/app-content";
 import Footer from "../../components/footer/footer";
+
+
+
+export async function generateMetadata({ params }) {
+    console.log(params)
+
+    return {
+      title: "appName",
+      description: "ata.description",
+      openGraph: {
+        site: "Steam - Klon",
+        title:' appName',
+        description: 'data.description',
+      },
+    };
+}
 
 
 const StoreApp = () => {
