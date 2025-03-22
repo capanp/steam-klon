@@ -12,31 +12,38 @@ import Footer from "../../components/footer/footer";
 
 
 export async function generateMetadata({ params }) {
-  const { appPath } = await params;
-  console.log(appPath)
+  const { appPath } = params;
   const appName = appPath.replaceAll("_", " ");
 
-  // API veya public dosyalar üzerinden kontrol
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/app/${appPath}/data.json`);
+  try {
+    console.log("Fetching data for:", appPath);
+    
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/app/${appPath}/data.json`);
+    
+    if (!response.ok) {
+      console.error("Fetch failed:", response.status, response.statusText);
+      notFound();
+    }
 
-  if (!response.ok) {
-    // Eğer veri bulunamazsa, 404 yönlendirmesi
-    notFound();
-  }
+    const data = await response.json();
+    console.log("Fetched data:", data);
 
-  const data = await response.json();
-
-  return {
-    title: appName,
-    description: data.description,
-    openGraph: {
-      site: "Steam - Klon",
+    return {
       title: appName,
       description: data.description,
-      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/app/${appPath}/thumbnail.jpg`],
-    },
-  };
+      openGraph: {
+        site: "Steam - Klon",
+        title: appName,
+        description: data.description,
+        images: [`${process.env.NEXT_PUBLIC_BASE_URL}/app/${appPath}/thumbnail.jpg`],
+      },
+    };
+  } catch (error) {
+    console.error("Error in generateMetadata:", error);
+    notFound();
+  }
 }
+
 
 const StoreApp = () => {
   return (
