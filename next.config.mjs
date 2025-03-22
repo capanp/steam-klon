@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    runtime: 'experimental-edge',
+  },
   env: {
     NEXT_PUBLIC_BASE_URL:
       process.env.NODE_ENV === 'production'
