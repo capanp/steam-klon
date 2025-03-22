@@ -12,36 +12,17 @@ import Footer from "../../components/footer/footer";
 
 
 export async function generateMetadata({ params }) {
-  const { appPath } = params;
-  const appName = appPath.replaceAll("_", " ");
-
-  try {
-    console.log("Fetching data for:", appPath);
-    
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/app/${appPath}/data.json`);
-    
-    if (!response.ok) {
-      console.error("Fetch failed:", response.status, response.statusText);
-      notFound();
-    }
-
-    const data = await response.json();
-    console.log("Fetched data:", data);
+    console.log(params)
 
     return {
-      title: appName,
-      description: data.description,
+      title: "appName",
+      description: "ata.description",
       openGraph: {
         site: "Steam - Klon",
-        title: appName,
-        description: data.description,
-        images: [`${process.env.NEXT_PUBLIC_BASE_URL}/app/${appPath}/thumbnail.jpg`],
+        title:' appName',
+        description: 'data.description',
       },
     };
-  } catch (error) {
-    console.error("Error in generateMetadata:", error);
-    notFound();
-  }
 }
 
 
