@@ -16,7 +16,6 @@ async function fetchapp(appPath) {
 const AppMedia = () => {
   const appPath = usePathname().split("/").at(-1);
   const appName = appPath.replaceAll("_", " ");
-  const appDate = "19 Mar 2019";
 
   // State ile appData'yı yönet
   const [appData, setAppData] = useState(null);
