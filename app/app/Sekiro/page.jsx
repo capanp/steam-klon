@@ -8,8 +8,21 @@ import AppContent from "../../components/app-content/app-content";
 import Footer from "../../components/footer/footer";
 
 export const metadata = {
-  title: "Sekiro Steam'de",
-  description: "Sekiro Steam mağaza sayfası.",
+  title: 'Sekiro™: Shadows Die Twice - GOTY Edition',
+  description: 'Sekiro™: Shadows Die Twice ile intikam yolculuğuna çık. Efsanevi bir aksiyon oyunu seni bekliyor!',
+  openGraph: {
+    site: 'Steam - Klon',
+    title: 'Sekiro™: Shadows Die Twice - GOTY Edition',
+    description: 'Sekiro™: Shadows Die Twice ile intikam yolculuğuna çık. Efsanevi bir aksiyon oyunu seni bekliyor!',
+    images: ['https://store.steampowered.com/path-to-image.jpg'],
+    type: 'product',
+    price: {
+      amount: '59.99',
+      currency: 'USD'
+    },
+    rating: '4.5',
+    reviewCount: '230336',
+  },
 };
 
 const StoreApp = () => {
