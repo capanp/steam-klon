@@ -3,7 +3,7 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_BASE_URL:
       process.env.NODE_ENV === 'production'
-        ? 'https://www.anadomain.com' // Üretim ortamı
+        ? 'https://steam-klon.pages.dev/' // Ana domain
         : 'http://localhost:3000',    // Yerel geliştirme ortamı
   },
   images: {
